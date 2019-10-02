@@ -1,4 +1,4 @@
-.#DHCPD GUI
+.# DHCPD GUI
 
 Simple webpage to display dhcpd leases
 
