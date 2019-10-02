@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title= DHCPD
+		link(rel='stylesheet' type='text/css' href='/css/base.css')
+		script(type='text/javascript', src='js/utils.js')
+	
+	body
+		#titleheader
+			h1= 'Current DHCP Leases'
+
+		#searcher
+			input.paddedinput(type='text', id='myInput', placeholder='Search For...', size='32', onkeyup='sorter()')
+
+
+	#leasetable
+		-var leaseslist = leases
+		div
+		table#fancytable
+			tr
+				th IP Address
+				th MAC
+				th Hostname
+			each lease in leases
+				tr
+					td= lease.ip
+					td= lease["hardware ethernet"]
+					td= lease["client-hostname"]
+

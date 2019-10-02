@@ -1,0 +1,17 @@
+{
+  "name": "dhcpd-viewer",
+  "version": "1.0.0",
+  "description": "DHCPD GUI",
+  "main": "server.js",
+  "dependencies": {
+    "express": ">=4.16.3",
+    "pug": ">=2.0.3",
+    "dhcpd-leases": "=0.1.2",
+    "node-fqdn": ">=1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Poulos",
+  "license": "ISC"
+}
