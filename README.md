@@ -7,6 +7,7 @@ Simple webpage to display dhcpd leases
 - [ ] parse file every 10 seconds
 - [ ] moar css
 - [ ] docker
+- [X] Websockets everywhere
 
 ## Example Screenshot
 
